@@ -10,7 +10,7 @@
 		$servername = "mysqlserverprj2.mysql.database.azure.com";
 		$username = "myappadmin";
 		$password = "LqNJ3625*";
-		$dbname = "Employees";
+		$dbname = "employees";
 
 		// Create database connection
 		$conn = new mysqli($servername, $username, $password, $dbname);
