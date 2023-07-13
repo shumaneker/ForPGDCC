@@ -25,6 +25,15 @@
 		// Query database for all rows in the table
 		$sql = "SELECT * FROM employees";
 		//$result = $conn->query($sql);
+		if (mysqli_query($con, $query))
+		{
+		    echo "Pass!";
+		}
+		else
+		{
+		    echo $query;
+		}
+
 		if ($result=mysqli_query($con,$sql)){
 				// Display table headers
 				echo "<table><tr><th>ID</th><th>Name</th><th>Email</th></tr>";
