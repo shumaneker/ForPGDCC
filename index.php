@@ -11,10 +11,10 @@
 		$username = "myappadmin";
 		$password = "LqNJ3625*";
 		$dbname = "employees";
-		$dbport = "3306"
+		$dbport = "3306";
 
 		// Create database connection
-		$conn = new mysqli($servername, $username, $password, $dbname,$dbport);
+		$conn = new mysqli($servername, $username, $password, $dbname, $dbport);
 
 		// Check connection
 		if ($conn->connect_error) {
