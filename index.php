@@ -24,17 +24,18 @@
 		echo "Connection successfull";
 		// Query database for all rows in the table
 		$sql = "SELECT * FROM employees";
+		echo $sql;
 		//$result = $conn->query($sql);
-		if (mysqli_query($con, $query))
+		if (mysqli_query($con, $sql))
 		{
 		    echo "Pass!";
 		}
 		else
 		{
-		    echo $query;
+		    echo $sql;
 		}
 
-		if ($result=mysqli_query($con,$sql)){
+		if (mysqli_query($con,$sql)){
 				// Display table headers
 				echo "<table><tr><th>ID</th><th>Name</th><th>Email</th></tr>";
 				// Loop through results and display each row in the table
