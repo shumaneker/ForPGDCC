@@ -14,7 +14,7 @@
 		$dbport = "3306";
 
 		// Create database connection
-		$conn = new mysqli_connect($servername, $username, $password, $dbname, $dbport);
+		$conn = mysqli_connect($servername, $username, $password, $dbname, $dbport);
 
 		// Check connection
 		if ($conn->connect_error) {
